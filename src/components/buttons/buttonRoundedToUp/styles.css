@@ -4,6 +4,11 @@
     background: linear-gradient(180deg, rgba(132,26,246,1) 0%, rgba(72,10,138,1) 95%);
 
     border: none;
-    padding: 25px;
+    padding: 20px;
     cursor: pointer;
+}
+
+.buttonUpArrow:hover{
+    filter: drop-shadow(0 0 2em #7D11F0);
+    transition: 0.2s ease-in;
 }

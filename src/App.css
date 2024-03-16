@@ -2,13 +2,13 @@
   padding: 0;
   text-decoration: none;
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  max-width: 1280px;
+  max-width: 1600px;
   text-align: center;
   margin: 0 auto;
-  padding: 2em;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,15 +20,6 @@
   --white: #fff;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   display: flex;
   min-width: 320px;
@@ -36,5 +27,91 @@ body {
 
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
-  background-color: #060606;
+  background-color: var(--backgroundBlack);
 }
+
+.mainHeader{
+  padding: 48px 96px;
+  width: 1600px;
+}
+
+.mainHeader > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navMenu ul{
+  color: var(--white);
+  list-style-type: none;
+
+  display: flex;
+  gap: 24px;  
+}
+
+.navMenu ul li{
+  font-size: 20px;
+  font-family: 'Sora', sans-serif;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.navMenu ul li:hover{
+  background-color: var(--purpleAgency);
+  border-radius: 20px;
+  padding: 11px 12px;
+
+  transition: 0.2s ease-in;
+}
+
+.iconMenu{
+  display: none;
+}
+
+.textHeaderCopy{
+  font-size: 48px;
+  font-weight: 300;
+
+  color: var(--white);
+
+  text-align: start;
+  margin-top: 128px;
+}
+
+.textHeaderCopy  span{
+  color: var(--purpleAgency);
+  font-weight: 600;
+}
+
+.buttonHeaderSeeProject{
+  background: rgb(125,17,240);
+  background: linear-gradient(90deg, rgba(125,17,240,1) 65%, rgba(172,117,235,1) 92%, rgba(255,255,255,1) 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+
+  font-size: 24px;
+  font-weight: bold;
+  padding: 22px 112px;
+  border-radius: 10px;
+
+  margin-top: 52px;
+  cursor: pointer;
+}
+
+.content{
+  margin-top: 100px;
+}
+
+.textProjectTitle{
+  font-size: 36px;
+  font-weight: bold;
+
+  color: var(--white);
+}
+
