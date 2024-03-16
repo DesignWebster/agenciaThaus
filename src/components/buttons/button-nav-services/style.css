@@ -1,0 +1,17 @@
+.ButtonNavService{
+    height: 58px;
+    width: 250px;
+    background-color: transparent;
+    border: 1.5px solid var(--white);
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: 0.4s ease;
+
+    font-family: 'Sora', sans-serif;
+    color: var(--white);
+}
+
+.ButtonNavService:hover{
+    border: 1.5px solid var(--purpleAgency);
+}

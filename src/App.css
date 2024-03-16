@@ -1,0 +1,40 @@
+*{
+  padding: 0;
+  text-decoration: none;
+  margin: 0;
+}
+
+:root {
+  max-width: 1280px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --backgroundBlack: #060606;
+  --purpleAgency: #7D11F0;
+  --white: #fff;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #060606;
+}

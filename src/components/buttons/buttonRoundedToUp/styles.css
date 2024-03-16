@@ -1,0 +1,9 @@
+.buttonUpArrow{
+    border-radius: 999px;
+    background: rgb(132,26,246);
+    background: linear-gradient(180deg, rgba(132,26,246,1) 0%, rgba(72,10,138,1) 95%);
+
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+}
