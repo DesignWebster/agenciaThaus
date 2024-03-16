@@ -1,5 +1,4 @@
 # React + TypeScript + Vite
-# Design Site: ([https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md](https://www.figma.com/file/O4QXjasRCQatzFvs9GSbDM/Ag%C3%AAncia-Thaus?type=design&node-id=0%3A1&mode=design&t=gPZnrXZfmmr2tCmr-1))
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
