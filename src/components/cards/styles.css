@@ -1,7 +1,4 @@
 .cardProject{
-    width: 500px;
-    height: 360px;
-
     transition: transform 0.5s ease;
 }
 

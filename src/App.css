@@ -113,12 +113,9 @@ body {
 }
 
 .content{
-  margin-top: 100px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .textProjectTitle{
@@ -130,16 +127,15 @@ body {
 
 .optionsProject{
   margin-top: 36px;
-
   display: flex;
   gap: 20px;
 }
 
 .sectionCardsProjects{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual */
   gap: 32px;
-  margin-top: 36px;
-
+  margin: 36px auto;
   cursor: pointer;
 }
 

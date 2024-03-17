@@ -1,4 +1,5 @@
 import './App.css'
+
 import logoMarca from '/logo-marca.svg'
 
 //icones
@@ -11,10 +12,7 @@ import ButtonNavServices from './components/buttons/button-nav-projects/buttonNa
 //imagens
 import LoggoRightTop from '/logoMarcaLateral.png'
 
-
-
 function App() {
-
   return (
     <>
       <header className='mainHeader'>
@@ -25,7 +23,7 @@ function App() {
           />
           <nav className='navMenu'>
             <ul>
-              <li><a href="#contentWrapper"><img src={iconeMenu} className='iconMenu'/>Portfólio</a></li>
+              <li>Portfólio</li>
               <li><img src={iconeMenu} className='iconMenu' />Contatos</li>
               <li><img src={iconeMenu} className='iconMenu' />Sobre nós</li>
             </ul>
@@ -59,10 +57,19 @@ function App() {
           <CardProject 
             fileImgUrl='/cardImages/card2.png'
           />
+          <CardProject 
+            fileImgUrl='/cardImages/card2.png'
+          />
+          <CardProject 
+            fileImgUrl='/cardImages/card1.png'
+          />
+                    <CardProject 
+            fileImgUrl='/cardImages/card1.png'
+          />
         </div>
 
       </main>
-      <img src={LoggoRightTop} id='logoRightTop' alt="" />
+      {/* <img src={LoggoRightTop} id='logoRightTop' alt="" /> */}
     </>
   )
 }
