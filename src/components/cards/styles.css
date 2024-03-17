@@ -12,5 +12,7 @@
 }
 
 @media screen and (max-width: 600px){
-    
+    .cardProject{
+        width: 320px;
+    }
 }

@@ -134,12 +134,13 @@ body {
 .optionsProject{
   margin-top: 36px;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .sectionCardsProjects{
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual */
+  /* grid-template-columns: repeat(2, 1fr); */
   gap: 32px;
   margin: 36px;
   cursor: pointer;
@@ -198,18 +199,20 @@ body {
 }
 
 /* Estilos para telas maiores ou iguais a 600px */
-@media screen and (min-width: 600px) {
-  /* Estilos para telas médias */
-}
-
-/* Estilos para telas maiores ou iguais a 900px */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .sectionCardsProjects{
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
+/* Estilos para telas maiores ou iguais a 900px */
+@media screen and (min-width: 900px) {
+  .sectionCardsProjects{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Estilos para telas maiores ou iguais a 1200px */
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
 
 }
