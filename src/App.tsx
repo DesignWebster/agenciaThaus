@@ -4,6 +4,14 @@ import logoMarca from '/logo-marca.svg'
 //icones
 import iconeMenu from '/icons/arrowMenu.svg'
 
+//componentes
+import CardProject from './components/cards/cardProject'
+import ButtonNavServices from './components/buttons/button-nav-projects/buttonNavServices'
+
+//imagens
+import LoggoRightTop from '/logoMarcaLateral.png'
+
+
 
 function App() {
 
@@ -17,7 +25,7 @@ function App() {
           />
           <nav className='navMenu'>
             <ul>
-              <li><img src={iconeMenu} className='iconMenu'/>Portfólio</li>
+              <li><a href="#contentWrapper"><img src={iconeMenu} className='iconMenu'/>Portfólio</a></li>
               <li><img src={iconeMenu} className='iconMenu' />Contatos</li>
               <li><img src={iconeMenu} className='iconMenu' />Sobre nós</li>
             </ul>
@@ -31,11 +39,30 @@ function App() {
           VER PROJETOS
         </button>
       </header>
-      <main className='content'>
+      <main className='content' id='contentWrapper'>
+
         <h2 className='textProjectTitle'>
           Projetos da agência
         </h2>
+        <div className='optionsProject'>
+          <ButtonNavServices
+            service='Identidade Visual'
+          />
+          <ButtonNavServices
+            service='Social media'
+          />
+        </div>
+        <div className='sectionCardsProjects'>
+          <CardProject 
+            fileImgUrl='/cardImages/card1.png'
+          />
+          <CardProject 
+            fileImgUrl='/cardImages/card2.png'
+          />
+        </div>
+
       </main>
+      <img src={LoggoRightTop} id='logoRightTop' alt="" />
     </>
   )
 }

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+a{
+  color: var(--white);
+}
+
 :root {
   max-width: 1600px;
   text-align: center;
@@ -18,6 +22,10 @@
   --backgroundBlack: #060606;
   --purpleAgency: #7D11F0;
   --white: #fff;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body {
@@ -106,6 +114,11 @@ body {
 
 .content{
   margin-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .textProjectTitle{
@@ -115,3 +128,23 @@ body {
   color: var(--white);
 }
 
+.optionsProject{
+  margin-top: 36px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.sectionCardsProjects{
+  display: flex;
+  gap: 32px;
+  margin-top: 36px;
+
+  cursor: pointer;
+}
+
+#logoRightTop{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
