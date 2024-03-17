@@ -107,9 +107,15 @@ body {
   font-weight: bold;
   padding: 22px 112px;
   border-radius: 10px;
+  border: none;
 
   margin-top: 52px;
   cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.buttonHeaderSeeProject:hover{
+  filter: drop-shadow(0 0 1em #7D11F0);
 }
 
 .content{
@@ -135,12 +141,75 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual */
   gap: 32px;
-  margin: 36px auto;
+  margin: 36px;
   cursor: pointer;
 }
 
-#logoRightTop{
-  position: absolute;
-  top: 0;
-  right: 0;
+.buttonSeeMoreProjects{
+  padding: 22px 39px;
+  border: none;
+  cursor: pointer;
+
+  background: rgb(125,17,240);
+  background: linear-gradient(90deg, rgba(125,17,240,1) 46%, rgba(172,117,235,1) 85%, rgba(172,117,235,1) 93%);
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+
+  border-radius: 20px;
+  transition: 0.3s ease-in;
+
+  margin-bottom: 32px;
+}
+
+.buttonSeeMoreProjects:hover{
+  filter: drop-shadow(0 0 1em #7D11F0);
+}
+
+@media screen and (max-width: 600px) {
+  .mainHeader{
+    padding: 48px;
+    width: 100%;
+  }
+
+  .logoMarcaPrincipal{
+    width: 160px;
+  }
+
+  .textHeaderCopy{
+    margin-top: 32px;
+    font-size: 20px;
+  }
+
+  .buttonHeaderSeeProject{
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    padding: 17px 39px;
+  }
+
+  .navMenu{
+    display: none;
+  }
+
+  .textProjectTitle{
+    font-size: 20px;
+  }
+}
+
+/* Estilos para telas maiores ou iguais a 600px */
+@media screen and (min-width: 600px) {
+  /* Estilos para telas médias */
+}
+
+/* Estilos para telas maiores ou iguais a 900px */
+@media screen and (max-width: 900px) {
+  .sectionCardsProjects{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Estilos para telas maiores ou iguais a 1200px */
+@media screen and (min-width: 1200px) {
+
 }

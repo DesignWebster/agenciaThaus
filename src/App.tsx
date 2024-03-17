@@ -9,8 +9,6 @@ import iconeMenu from '/icons/arrowMenu.svg'
 import CardProject from './components/cards/cardProject'
 import ButtonNavServices from './components/buttons/button-nav-projects/buttonNavServices'
 
-//imagens
-import LoggoRightTop from '/logoMarcaLateral.png'
 
 function App() {
   return (
@@ -19,6 +17,7 @@ function App() {
         <div>
           <img 
             src={logoMarca}
+            className='logoMarcaPrincipal'
             alt="" 
           />
           <nav className='navMenu'>
@@ -63,13 +62,11 @@ function App() {
           <CardProject 
             fileImgUrl='/cardImages/card1.png'
           />
-                    <CardProject 
-            fileImgUrl='/cardImages/card1.png'
-          />
         </div>
-
+        <button className='buttonSeeMoreProjects'>
+          Ver mais...
+        </button>
       </main>
-      <img src={LoggoRightTop} id='logoRightTop' alt="" />
     </>
   )
 }

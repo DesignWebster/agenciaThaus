@@ -7,7 +7,7 @@ interface CardProjectProps{
 function CardProject({fileImgUrl}: CardProjectProps){
     return(
         <div className="cardProject">
-            <img src={fileImgUrl} alt="" />
+            <img src={fileImgUrl} alt="" className='imageCardCap'/>
         </div>
     );
 }

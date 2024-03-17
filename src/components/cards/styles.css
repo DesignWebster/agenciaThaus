@@ -1,7 +1,16 @@
 .cardProject{
     transition: transform 0.5s ease;
+    width: 400px;
 }
 
 .cardProject:hover{
     transform: scale(1.05);
+}
+
+.imageCardCap{
+    width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    
 }
