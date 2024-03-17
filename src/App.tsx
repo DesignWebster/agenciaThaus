@@ -69,7 +69,7 @@ function App() {
         </div>
 
       </main>
-      {/* <img src={LoggoRightTop} id='logoRightTop' alt="" /> */}
+      <img src={LoggoRightTop} id='logoRightTop' alt="" />
     </>
   )
 }
